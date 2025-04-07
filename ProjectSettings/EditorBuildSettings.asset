@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 4d9f66cbca6aa25428e7568a15e560cc
+  - enabled: 1
+    path: Assets/Scenes/DispensarySim.unity
+    guid: 1e3032b0212cd6e46ab16f5e2d37c3cb
+  - enabled: 1
+    path: Assets/Scenes/LoadingOne.unity
+    guid: 20131e43f0e7a4d4bb6aff99150928c6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

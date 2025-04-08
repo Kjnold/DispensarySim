@@ -195,13 +195,13 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.11
     - _GlossyReflections: 1
-    - _HeightAmplitude: 0.099999994
+    - _HeightAmplitude: 0.0299
     - _HeightCenter: 1
     - _HeightMapParametrization: 0
     - _HeightMax: 1
     - _HeightMin: -1
     - _HeightOffset: 0
-    - _HeightPoMAmplitude: 10
+    - _HeightPoMAmplitude: 2.99
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 1

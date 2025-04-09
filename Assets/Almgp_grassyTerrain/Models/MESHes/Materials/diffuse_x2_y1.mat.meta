@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 18bc0c875f829ee40a9913b74d715fcd
+timeCreated: 1460398141
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60497
+  packageName: Grassy Valley Terrains
+  packageVersion: 1.0
+  assetPath: Assets/Almgp_grassyTerrain/Models/MESHes/Materials/diffuse_x2_y1.mat
+  uploadId: 112557

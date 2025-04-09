@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8342e1f36bc8eb04e8db78a3b2ba190b
+timeCreated: 1460449501
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60497
+  packageName: Grassy Valley Terrains
+  packageVersion: 1.0
+  assetPath: Assets/Almgp_grassyTerrain/Models/MESHes/prefab/hight/TerrainMesh.prefab
+  uploadId: 112557

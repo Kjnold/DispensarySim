@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ae749725ace69694aa28e1f216aaa0ed
+timeCreated: 1460295713
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60497
+  packageName: Grassy Valley Terrains
+  packageVersion: 1.0
+  assetPath: Assets/Almgp_grassyTerrain/scene/LightingData.asset
+  uploadId: 112557

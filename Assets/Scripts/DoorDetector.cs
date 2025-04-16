@@ -1,15 +1,24 @@
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class DoorDetector : MonoBehaviour
 {
 
     private DoorOpener doorOpener; // Reference to the DoorOpener script
-    private Keybinds keybinds; // Reference to the Keybinds script
+    public Keybinds keybinds; // Reference to the Keybinds script
 
     void Start()
     {
         doorOpener = GetComponentInParent<DoorOpener>(); // Get the DoorOpener script from the parent object
-        keybinds = Object.FindFirstObjectByType<Keybinds>(); // Find the Keybinds script in the scene
+        // set keybinds to the Keybinds script in the scene
+        if (keybinds == null)
+        {
+            keybinds = FindObjectOfType<Keybinds>();
+            if (keybinds == null)
+            {
+                Debug.LogError("Keybinds script not found in the scene.");
+            }
+        }
     }
     void Update()
     {
@@ -21,9 +30,7 @@ public class DoorDetector : MonoBehaviour
     *   If the distance is less than 2 units, it returns true; otherwise, it returns false.
     */
     private bool CloseEnough(){
-        if(Vector3.Distance(transform.position, Camera.main.transform.position) < 2f){
-            return true;
-        }
+            if(Vector3.Distance(transform.position, Camera.main.transform.position) < 2f){  return true;  }
         return false;
     }
 
@@ -33,9 +40,12 @@ public class DoorDetector : MonoBehaviour
     *   Key E toggles the door, and key L changes the lock state.
     */
     private void DoorCheck(){
-        if(CloseEnough() && LookingAtDoor() && doorOpener != null){
-            if (Input.GetKeyDown(keybinds.useKey)){   doorOpener.ToggleDoor();   }
-            else if(Input.GetKeyDown(keybinds.lockKey)){   doorOpener.ChangeLockState();   }
+        if(CloseEnough() && LookingAtDoor() && doorOpener != null && keybinds != null){
+            if (Input.GetKeyDown(keybinds.useKey)){ 
+                doorOpener.ToggleDoor();
+            }else if(Input.GetKeyDown(keybinds.lockKey)){
+                doorOpener.ChangeLockState(); 
+            } 
         }
     }
 

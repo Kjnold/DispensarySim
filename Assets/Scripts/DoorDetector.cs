@@ -13,7 +13,7 @@ public class DoorDetector : MonoBehaviour
         // set keybinds to the Keybinds script in the scene
         if (keybinds == null)
         {
-            keybinds = FindObjectOfType<Keybinds>();
+            keybinds = FindFirstObjectByType<Keybinds>();
             if (keybinds == null)
             {
                 Debug.LogError("Keybinds script not found in the scene.");
